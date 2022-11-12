@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: #20003B;
+    color: rgb(226, 226, 226);
+    font-family: sans-serif;
+    width: 1300px;
+}
+
+.padre{
+    background: #50298f;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 10%; 
+      
+}
+
+.textos{
+    width: 70%;
+}
+
+.imagen{
+    width: 30%;
+}
+
+.padre img{
+    filter: opacity(0.8) drop-shadow(0 0 0 #8B00CC);
+    float:left;
+    width: 400px;
+}
+
+.padre h1{
+    margin: 0px 40px 20px 40px;
+    font-size: 30px;
+}
+
+.padre p{
+    margin: 0px 40px 0px 40px;
+    font-size: 15px;
+    
+}
+
+.padre span{
+    color: #41015f;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px 0px 40px;
+    
+}
+
+.datos p{
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.datos h3{
+    font-size: 25px;
+}
+
+
+
+/* Tamaño por defecto pantallas (1280-1024) */
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    body{
+    width: 1280px;
+    }
+}
+/* Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    body{
+        width: 768px;
+        }
+}
+
+/* Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+/* Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) { }
+

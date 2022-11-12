@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background: #0769e9;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px; /* Para centrar el Logo*/
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px ;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px ;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content; /* Para no cortar el contenido del menu*/
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-menu-link:hover, .nav-menu-link-active {
+    background: #034574;
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+@media  (max-width:768px){
+   
+    body {
+        padding-top: 70px;
+    }
+    
+    .header{
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px; /* Para centrar el Logo*/
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 30px ;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+
+        height: calc(100% -60px);
+        overflow-y: auto; /*barra de navegación al menu si tiene mas elementos*/
+
+        left: 100%; /* Para correr todo el menu hacia la derecha */
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    
+    .nav-menu-link:hover, .nav-menu-link-active /* para marcar una opción de menu*/{
+        background: none;
+        color: #83c5f7;
+    }
+    
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+
+    }
+
+}
